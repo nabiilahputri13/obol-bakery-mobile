@@ -39,11 +39,34 @@ h. Menampilkan menu pada Flutter: Setelah kita menghubungkan autentikasi, kita b
 
 5. Sebutkan seluruh widget yang kamu pakai pada tugas ini dan jelaskan fungsinya masing-masing.
 Jawab:
+Scaffold: Membungkus seluruh tampilan dengan kerangka dasar aplikasi, termasuk AppBar dan body.
+
+AppBar: membuat bagian atas UI aplikasi (semacam navbar), AppBar juga dapat menampilkan judul aplikasi pada properti 'title', menambahkan button seperti back/next, kustomisasi tampilan seperti 'backGroundColor' atau 'textColor', dll.
+
+Text: menampilkan & kustomisasi teks dalam UI aplikasi. Dalam tugas ini menampilkan teks "Welcome to Obol Bakery >w<" di dalam AppBar.
+
+SingleChildScrollView: memiliki single child di dalamnya. Fungsinya untuk scroll konten melebihi ruang yang tersedia di layar. Walaupun hanya ada single child di dalamnya, banyak widget dapat ditempatkan di dalam single child tersebut dan seluruh konten dalam widget single child tersebut dapat discroll.
+
+Padding: menambahkan padding ke dalam kontennya.
+
+Column: mengatur tampilan vertikal/kolom untuk konten.
+
+FutureBuilder : membangun antarmuka yang menanggapi status permintaan (loading, error, atau data berhasil diambil) tanpa harus menuliskan banyak kode yang sama berulang-ulang.
+
+ListView : menampilkan daftar elemen di dalam scrollable view.
+
+Container : membantu dalam mengontrol tata letak dan penataan elemen-elemen UI di dalamnya.
+
+Icon :  menampilkan ikon grafis. 
+
+SnackBar :  menampilkan pesan sementara atau informasi yang muncul di bagian bawah layar.
+
+ListTile :  merepresentasikan satu item dalam daftar atau tampilan berisi. Dapat berisi elemen-elemen seperti ikon, teks, dan lain-lain.
 
 
 6. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step! (bukan hanya sekadar mengikuti tutorial).
 Jawab: 
-
+Saya membaca tutorial, menonton tutorial YouTube, serta mencari tahu lebih lanjut tentang flutter, saya juga mempelajari berbagai macam widget serta kegunaannya, kemudian saya memahami properti dari product dan cara kerja Quicktype, barulah saya mengimplementasikannya pada tugas 9 ini.
 
 
 ## TUGAS 8 ##
