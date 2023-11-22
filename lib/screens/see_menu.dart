@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:obol_bakery/screens/shoplist_form.dart';
 import 'package:obol_bakery/widgets/left_drawer.dart';
-import 'package:obol_bakery/product.dart';
 
 class ProductCard extends StatelessWidget {
   final String name;
@@ -61,13 +60,13 @@ class MenuPage extends StatelessWidget {
                 mainAxisSpacing: 10,
                 crossAxisCount: 3,
                 shrinkWrap: true,
-                children: allProducts
-                    .map((product) => ProductCard(
-                          name: product.name,
-                          price: product.price,
-                          description: product.description,
-                        ))
-                    .toList(),
+                // children: allProducts
+                //     .map((product) => ProductCard(
+                //           name: product.name,
+                //           price: product.price,
+                //           description: product.description,
+                //         ))
+                //     .toList(),
               )
             ])));
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:obol_bakery/screens/list_product.dart';
 import 'package:obol_bakery/screens/menu.dart';
 import 'package:obol_bakery/screens/shoplist_form.dart';
 import 'package:obol_bakery/screens/see_menu.dart';
@@ -73,6 +74,17 @@ class LeftDrawer extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (context) => MenuPage(),
                   ));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.shopping_basket),
+            title: const Text('Daftar Produk'),
+            onTap: () {
+              // Route menu ke halaman produk
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProductPage()),
+              );
             },
           ),
         ],

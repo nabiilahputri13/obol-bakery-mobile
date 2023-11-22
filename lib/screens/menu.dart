@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:obol_bakery/screens/list_product.dart';
 import 'package:obol_bakery/widgets/left_drawer.dart';
 import 'package:obol_bakery/screens/shoplist_form.dart';
 import 'package:obol_bakery/widgets/shop_card.dart';
@@ -28,6 +29,9 @@ class ShopCard extends StatelessWidget {
           } else if (item.name == "See Menu") {
             Navigator.push(
                 context, MaterialPageRoute(builder: (context) => MenuPage()));
+          } else if (item.name == "Lihat Produk") {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const ProductPage()));
           }
         },
         child: Container(
@@ -64,6 +68,7 @@ class MyHomePage extends StatelessWidget {
     ShopItem("See Menu", Icons.checklist, Colors.pink),
     ShopItem("Add to Cart", Icons.add_shopping_cart, Colors.orange),
     ShopItem("Logout", Icons.logout, Colors.purple),
+    ShopItem("Lihat Produk", Icons.shopping_basket, Colors.black)
   ];
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect

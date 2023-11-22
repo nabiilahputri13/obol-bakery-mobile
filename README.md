@@ -1,3 +1,51 @@
+## TUGAS 9  ##
+1.  Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Jawab:
+Bisa, karena format data JSON mudah dibaca secara langsung, namun membuat model sebelum melakukan pengambilan data JSON lebih baik. Jika data JSON yang akan diambil memiliki struktur yang kompleks, maka membuat model sebelum melakukan pengambilan data JSON akan membantu untuk menyusun dan mengorganisasi data secara efisien dan terstruktur. Selain itu, Membuat model sebelum melakukan pengambilan data JSON akan memudahkan penggunaan data ketika diperlukan karena model akan menyediakan objek yang dapat digunakan untuk mengakses dan mengambil data secara lebih mudah dan efisien. Pembuatan model sebelum melakukan pengambilan data JSON juga menjamin konsistensi data ketika diambil dari JSON, karena model akan memiliki atribut dan metode yang sesuai dengan struktur data JSON dan akan memastikan bahwa data yang diambil dari JSON memenuhi kriteria yang diinginkan.
+
+2. Jelaskan fungsi dari CookieRequest dan jelaskan mengapa instance CookieRequest perlu untuk dibagikan ke semua komponen di aplikasi Flutter.
+Jawab:
+CookieRequest  digunakan untuk menyimpan dan mengirimkan cookies secara otomatis dalam permintaan HTTP. Instance CookieRequest perlu untuk dibagikan ke semua komponen di aplikasi Flutter karena cookies adalah data yang disimpan di browser dan digunakan untuk menyimpan informasi antara kali pengguna mengunjungi sebuah situs web. Jika kita tidak menggunakan instance CookieRequest yang sama di semua komponen di aplikasi Flutter, maka cookies tidak akan dikirim dalam permintaan HTTP baru, dan aplikasi Flutter tidak akan bisa mengakses informasi yang disimpan sebelumnya. Ini sangat penting, karena cookies adalah data yang digunakan untuk menyimpan informasi antara kali pengguna mengunjungi sebuah situs web, sehingga cookies harus dikirim dalam permintaan HTTP baru untuk mengakses informasi yang disimpan sebelumnya.
+
+3. Jelaskan mekanisme pengambilan data dari JSON hingga dapat ditampilkan pada Flutter.
+Jawab:
+a. Membuat permintaan HTTP: Pertama, kita harus membuat permintaan HTTP ke server untuk mendapatkan data JSON. 
+
+b. Memroses data JSON: Setelah kita mendapatkan data JSON, kita harus memrosesnya untuk dapat ditampilkan pada Flutter. Kita bisa menggunakan library JSON di Dart untuk memroses data JSON. 
+
+c. Membuat widget: Setelah kita memroses data JSON, kita harus membuat widget untuk menampilkan data pada Flutter. Kita bisa menggunakan library Flutter untuk membuat widget yang sesuai dengan data JSON.
+
+d. Menghubungkan permintaan HTTP, memroses data JSON, dan membuat widget
+
+e. Menampilkan data pada Flutter: Setelah kita menghubungkannya secara teratur, kita bisa menampilkan data pada Flutter. Kita bisa menggunakan widget yang sesuai dengan data JSON untuk menampilkan data pada Flutter.
+
+4. Jelaskan mekanisme autentikasi dari input data akun pada Flutter ke Django hingga selesainya proses autentikasi oleh Django dan tampilnya menu pada Flutter.
+Jawab:
+a. Membuat form login: Pertama, kita harus membuat form login untuk mengumpulkan input data akun pengguna.
+
+b. Mengirim data login ke server: Setelah kita mengumpulkan input data akun pengguna, kita harus mengirim data login ke server Django. Kita bisa menggunakan library HTTP di Dart untuk mengirim data login ke server Django.
+
+c.  Memroses response login: Setelah kita mengirim data login ke server Django, kita harus memroses response login yang dikirim oleh server Django. Kita bisa menggunakan `json.decode()` untuk mengonversi response login menjadi objek Dart yang dapat ditampilkan pada Flutter.
+
+d. Menyimpan token autentikasi: Setelah kita memroses response login, kita harus menyimpan token autentikasi yang dikirim oleh server Django.
+
+e. Membuat widget menu: Setelah kita menyimpan token autentikasi, kita harus membuat widget menu untuk menampilkan menu pada Flutter. 
+
+f.  Mengecek token autentikasi: Setelah kita membuat widget menu, kita harus mengecek token autentikasi setiap kali kita mengakses menu. 
+
+g. Menghubungkan autentikasi: Setelah kita menggecek token autentikasi, kita harus menghubungkan autentikasi dengan server Django.
+
+h. Menampilkan menu pada Flutter: Setelah kita menghubungkan autentikasi, kita bisa menampilkan menu pada Flutter. Kita bisa menggunakan widget yang sesuai dengan menu pada Flutter.
+
+5. Sebutkan seluruh widget yang kamu pakai pada tugas ini dan jelaskan fungsinya masing-masing.
+Jawab:
+
+
+6. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step! (bukan hanya sekadar mengikuti tutorial).
+Jawab: 
+
+
+
 ## TUGAS 8 ##
 1. Jelaskan perbedaan antara Navigator.push() dan Navigator.pushReplacement(), disertai dengan contoh mengenai penggunaan kedua metode tersebut yang tepat!
 Jawab:
